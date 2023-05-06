@@ -9,6 +9,25 @@ I recommend you to run
 `npm install`
 before running the server
 
+Posts and People work using MongoDB. Install MongoDB using the following link:
+
+https://www.mongodb.com/try/download/shell
+
+for shell experience or,
+
+https://www.mongodb.com/try/download/compass
+
+for MongoDB with GUI.
+
+Run MongoDB before running the server to avoid errors.
+On Command Prompt/Terminal, run `mongod` to keep MongoDB running in the background.
+
+To keep track of the documents, on the command prompt run `mongosh` if you installed MongoDB shell.
+Then, run `use urpg-community` to switch the database to urpg-community.
+Then, run `db.posts.find()` to see all the documents in the posts collection.
+Also you can run `db.people.find()` to see all the documents in the people collection.
+If you add your own documents, please follow the schemas in `app.js` so the system runs error free.
+
 To run the server, run the following command:
 `node app.js`
 Alternatively, using nodemon:
